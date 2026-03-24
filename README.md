@@ -1,147 +1,222 @@
 # 📝 TaskFlow
 
-## 📖 Descrição
+<p align="center">
+  <b>Gerenciamento simples e eficiente de tarefas para o dia a dia</b>
+</p>
 
-O **TaskFlow** é um aplicativo simples de gerenciamento de tarefas (to-do list) criado para ajudar usuários a organizarem suas atividades diárias de forma prática e eficiente.
-
-A proposta do sistema é oferecer uma experiência intuitiva, rápida e funcional, permitindo o controle de tarefas pessoais ou profissionais com foco em produtividade.
-
----
-
-## ⚙️ Funcionalidades
-
-* Criar novas tarefas
-* Editar tarefas existentes
-* Excluir tarefas
-* Marcar tarefa como concluída ou pendente
-* Listar todas as tarefas
-* Filtrar tarefas (todas, concluídas, pendentes)
-* Ordenar tarefas (por data, prioridade, etc.)
-* Definir prioridade da tarefa (baixa, média, alta)
+<p align="center">
+  <img src="https://img.shields.io/badge/status-em%20desenvolvimento-yellow" />
+  <img src="https://img.shields.io/badge/plataforma-web%20%7C%20mobile-blue" />
+  <img src="https://img.shields.io/badge/licença-MIT-green" />
+</p>
 
 ---
 
-## 🖥️ Telas do sistema/app
+## 📖 Sobre o Projeto
 
-### 📋 Dashboard
+O **TaskFlow** é um aplicativo de gerenciamento de tarefas (to-do list) desenvolvido para ajudar usuários a organizarem suas atividades diárias de forma prática e eficiente.
 
-* Exibe todas as tarefas
-* Permite marcar como concluída
-* Permite excluir rapidamente
-* Filtros visíveis (todas / concluídas / pendentes)
-* Ordenação de tarefas
-* Acesso rápido para criação de nova tarefa
+O sistema tem como foco uma experiência simples, intuitiva e rápida, sendo ideal tanto para uso pessoal quanto profissional.
 
 ---
 
-### ➕ Criação/Edição de tarefa
+## ✨ Funcionalidades
 
-* Campo para título
-* Campo de descrição
-* Seleção de prioridade
-* Opção de editar tarefa existente
-* Botão de salvar
-
----
-
-### 🔍 Detalhes da tarefa (opcional)
-
-* Visualização completa da tarefa
-* Exibição de status (concluída ou pendente)
-* Exibição de prioridade
-* Ações de editar e excluir
+- Criar novas tarefas
+- Editar tarefas existentes
+- Excluir tarefas
+- Marcar tarefas como concluídas ou pendentes
+- Listar todas as tarefas
+- Filtrar tarefas (todas, concluídas, pendentes)
+- Ordenar tarefas (por data, prioridade, etc.)
+- Definir prioridade (baixa, média, alta)
 
 ---
 
-### ⚙️ Configurações
+## 🖼️ Wireframes
 
-* Alternar tema (claro/escuro)
-* Definir ordenação padrão das tarefas
-* Ativar/desativar notificações
-* Configurar tempo padrão de lembretes
-* Escolher idioma
-* Preferência de exibição (lista ou cards)
-* Configuração de prioridade padrão ao criar tarefas
-* Personalização visual (cores, layout)
-* (Futuro) Gerenciamento de conta
+> Abaixo estão os wireframes utilizados para definir a estrutura e experiência do sistema.
 
 ---
 
-## 🧩 Tecnologias usadas
+# 🌐 Versão Web
 
-*(Será definido após o desenvolvimento)*
+## 📋 Dashboard
+
+📌 Wireframe: `/wireframes/web/tela-dashboard.png`
+
+![Dashboard Web](./wireframes/web/tela-dashboard.png)
+
+- Navegação lateral (sidebar)
+- Barra superior com ações
+- Lista de tarefas com ações rápidas
 
 ---
 
-## 🚀 Lista de coisas a implementar
+## ➕ Criar / Editar Tarefa (Modal)
 
-### 🌐 Versão Web
+📌 Wireframe: `/wireframes/web/modal-criar-editar-tarefa.png`
+
+![Criar Tarefa Web](./wireframes/web/modal-criar-editar-tarefa.png)
+
+- Formulário em modal
+- Campos para título, descrição e prioridade
+
+---
+
+## 🔍 Detalhes da Tarefa
+
+📌 Wireframe: `/wireframes/web/modal-detalhes-tarefa.png`
+
+![Detalhes Web](./wireframes/web/modal-detalhes-tarefa.png)
+
+- Visualização completa da tarefa
+- Ações de editar e excluir
+
+---
+
+## ⚙️ Configurações
+
+📌 Wireframe: `/wireframes/web/tela-configuracoes.png`
+
+![Configurações Web](./wireframes/web/tela-configuracoes.png)
+
+- Preferências do sistema
+- Configurações de tema e comportamento
+
+---
+
+# 📱 Versão Mobile
+
+## 📋 Dashboard
+
+📌 Wireframe: `/wireframes/mobile/tela-dashboard.png`
+
+![Dashboard Mobile](./wireframes/mobile/tela-dashboard.png)
+
+- Lista vertical de tarefas
+- Botão de ação flutuante (+)
+
+---
+
+## ➕ Criar / Editar Tarefa
+
+📌 Wireframe: `/wireframes/mobile/tela-criar-editar-tarefa.png`
+
+![Criar Tarefa Mobile](./wireframes/mobile/tela-criar-editar-tarefa.png)
+
+- Tela dedicada para criação/edição
+- Inputs otimizados para mobile
+
+---
+
+## 🔍 Detalhes da Tarefa
+
+📌 Wireframe: `/wireframes/mobile/tela-detalhes-tarefa.png`
+
+![Detalhes Mobile](./wireframes/mobile/tela-detalhes-tarefa.png)
+
+- Visualização simplificada
+- Ações rápidas
+
+---
+
+## ⚙️ Configurações
+
+📌 Wireframe: `/wireframes/mobile/tela-configuracoes.png`
+
+![Configurações Mobile](./wireframes/mobile/tela-configuracoes.png)
+
+- Preferências do usuário
+- Ajustes do aplicativo
+
+---
+
+## 🧩 Tecnologias
+
+> Será definido após o desenvolvimento.
+
+---
+
+## 🚀 Roadmap
+
+### 🌐 Web
 
 #### 📋 Dashboard
 
-* [ ] Listar tarefas
-* [ ] Marcar tarefa como concluída
-* [ ] Excluir tarefa
-* [ ] Filtros (todas / concluídas / pendentes)
-* [ ] Ordenação de tarefas
+- [ ] Listar tarefas
+- [ ] Marcar como concluída
+- [ ] Excluir tarefa
+- [ ] Filtros
+- [ ] Ordenação
 
-#### ➕ Criação/Edição de tarefa
+#### ➕ Criar / Editar
 
-* [ ] Criar nova tarefa
-* [ ] Editar tarefa existente
-* [ ] Definir prioridade
-* [ ] Validação de campos
-
-#### 🔍 Detalhes da tarefa
-
-* [ ] Exibir dados completos
-* [ ] Ação de editar
-* [ ] Ação de excluir
-
-#### ⚙️ Configurações
-
-* [ ] Alternar tema
-* [ ] Definir preferências do usuário
-* [ ] Configurar comportamento padrão do sistema
-
----
-
-### 📱 Versão App (Mobile)
-
-#### 📋 Tela principal
-
-* [ ] Listagem otimizada para mobile
-* [ ] Ações rápidas (concluir/excluir)
-* [ ] Navegação simples
-
-#### ➕ Criar/Editar tarefa
-
-* [ ] Formulário adaptado para mobile
-* [ ] Inputs otimizados
+- [ ] Criar tarefa
+- [ ] Editar tarefa
+- [ ] Definir prioridade
+- [ ] Validação
 
 #### 🔍 Detalhes
 
-* [ ] Visualização simplificada
-* [ ] Ações rápidas
+- [ ] Exibir dados completos
+- [ ] Editar
+- [ ] Excluir
 
 #### ⚙️ Configurações
 
-* [ ] Ajustes básicos do app
-* [ ] Preferências do usuário
+- [ ] Tema
+- [ ] Preferências
+- [ ] Comportamento padrão
 
 ---
 
-## 💡 Atualizações futuras (sem prioridade)
+### 📱 Mobile
 
-* Drag and drop de tarefas
-* Notificações em tempo real
-* Tema dark/light mais avançado
-* Responsividade aprimorada
-* Histórico de atividades
-* Integração com calendário
-* Compartilhamento de tarefas
-* Sistema de categorias/tags
-* Modo offline
-* Sincronização entre dispositivos
+#### 📋 Tela principal
+
+- [ ] Listagem otimizada
+- [ ] Ações rápidas
+- [ ] Navegação simples
+
+#### ➕ Criar / Editar
+
+- [ ] Formulário mobile
+- [ ] Inputs otimizados
+
+#### 🔍 Detalhes
+
+- [ ] Visualização simplificada
+- [ ] Ações rápidas
+
+#### ⚙️ Configurações
+
+- [ ] Ajustes do app
+- [ ] Preferências
 
 ---
+
+## 💡 Atualizações futuras
+
+- Drag and drop de tarefas
+- Notificações em tempo real
+- Tema dark/light avançado
+- Melhorias de responsividade
+- Histórico de atividades
+- Integração com calendário
+- Compartilhamento de tarefas
+- Sistema de categorias/tags
+- Modo offline
+- Sincronização entre dispositivos
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença **MIT**.
+
+---
+
+## 👨‍💻 Autor
+
+Desenvolvido por **Kevyn Aparecido**
