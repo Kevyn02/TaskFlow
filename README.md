@@ -321,55 +321,67 @@ Abaixo estão os wireframes utilizados para definir a estrutura e experiência d
 
 ### 📌 Diagrama de Casos de Uso
 
-```mermaid
-graph LR
+```mermaid id="u9k2x1"
+graph TD
 
     User[👤 Usuário]
 
     %% Autenticação
-    Login[🔐 Realizar Login]
-    Register[🆕 Criar Conta]
-    SocialLogin[🔗 Login com Google/GitHub]
+    subgraph AUTH[🔐 Autenticação]
+        Register[🆕 Criar Conta]
+        Login[🔐 Realizar Login]
+        SocialLogin[🔗 Login com Google/GitHub]
+        Authenticated[🔓 Usuário Autenticado]
+    end
 
-    User --> Login
     User --> Register
-    Login -.-> SocialLogin
+    User --> Login
+    User --> SocialLogin
+
+    Register --> Authenticated
+    Login --> Authenticated
+    SocialLogin --> Authenticated
 
     %% Projetos
-    ViewProjects[📁 Visualizar Projetos]
-    CreateProject[➕ Criar Projeto]
-    EditProject[✏️ Editar Projeto]
-    DeleteProject[🗑️ Excluir Projeto]
-
-    User --> ViewProjects
-    User --> CreateProject
-    User --> EditProject
-    User --> DeleteProject
+    subgraph PROJECTS[📁 Projetos]
+        ViewProjects[📂 Visualizar Projetos]
+        CreateProject[➕ Criar Projeto]
+        EditProject[✏️ Editar Projeto]
+        DeleteProject[🗑️ Excluir Projeto]
+    end
 
     %% Tarefas
-    ViewTasks[📋 Visualizar Tarefas]
-    CreateTask[➕ Criar Tarefa]
-    EditTask[✏️ Editar Tarefa]
-    DeleteTask[🗑️ Excluir Tarefa]
-    CompleteTask[✅ Concluir Tarefa]
+    subgraph TASKS[📋 Tarefas]
+        ViewTasks[📋 Visualizar Tarefas]
+        CreateTask[➕ Criar Tarefa]
+        EditTask[✏️ Editar Tarefa]
+        DeleteTask[🗑️ Excluir Tarefa]
+        CompleteTask[✅ Concluir Tarefa]
+        FilterTasks[🔍 Filtrar Tarefas]
+        SortTasks[↕️ Ordenar Tarefas]
+    end
 
-    User --> ViewTasks
-    User --> CreateTask
-    User --> EditTask
-    User --> DeleteTask
-    User --> CompleteTask
+    %% Configurações
+    subgraph SETTINGS[⚙️ Configurações]
+        Settings[⚙️ Gerenciar Configurações]
+    end
 
-    %% Organização
-    FilterTasks[🔍 Filtrar Tarefas]
-    SortTasks[↕️ Ordenar Tarefas]
+    %% Relações principais
+    Authenticated --> ViewProjects
+    Authenticated --> CreateProject
+    Authenticated --> EditProject
+    Authenticated --> DeleteProject
+
+    Authenticated --> ViewTasks
+    Authenticated --> CreateTask
+    Authenticated --> EditTask
+    Authenticated --> DeleteTask
+    Authenticated --> CompleteTask
 
     ViewTasks --> FilterTasks
     ViewTasks --> SortTasks
 
-    %% Configurações
-    Settings[⚙️ Gerenciar Configurações]
-
-    User --> Settings
+    Authenticated --> Settings
 ```
 
 ---
