@@ -8,44 +8,200 @@
   <img src="https://img.shields.io/badge/status-em%20desenvolvimento-yellow" />
   <img src="https://img.shields.io/badge/plataforma-web%20%7C%20mobile-blue" />
   <img src="https://img.shields.io/badge/licença-MIT-green" />
+  <img src="https://img.shields.io/github/last-commit/Kevyn02/TaskFlow" />
+  <img src="https://img.shields.io/github/repo-size/Kevyn02/TaskFlow" />
 </p>
 
 ---
 
 ## 📖 Sobre o Projeto
 
-O **TaskFlow** é um aplicativo de gerenciamento de tarefas (to-do list) desenvolvido para ajudar usuários a organizarem suas atividades diárias de forma prática e eficiente.
+O **TaskFlow** é um aplicativo de gerenciamento de tarefas (to-do list) focado em produtividade, simplicidade e organização.
 
-O sistema tem como foco uma experiência simples, intuitiva e rápida, sendo ideal tanto para uso pessoal quanto profissional.
+O sistema permite que usuários gerenciem suas tarefas de forma eficiente, organizando-as por projetos e acompanhando seu progresso no dia a dia.
 
 ---
 
 ## ✨ Funcionalidades
 
-- Criar novas tarefas
-- Editar tarefas existentes
-- Excluir tarefas
+- Criar, editar e excluir tarefas
 - Marcar tarefas como concluídas ou pendentes
-- Listar todas as tarefas
-- Filtrar tarefas (todas, concluídas, pendentes)
-- Ordenar tarefas (por data, prioridade, etc.)
+- Filtrar e ordenar tarefas
 - Definir prioridade (baixa, média, alta)
+- Organização por projetos
+- Sistema de autenticação (login e cadastro)
+
+---
+
+## 🧭 Arquitetura de Rotas
+
+A aplicação é dividida em três grupos principais:
+
+---
+
+### 🔓 Rotas Públicas
+
+Acessíveis sem autenticação:
+
+**Web**
+
+- `/signin`
+- `/signup`
+
+**Mobile**
+
+- `SignInScreen`
+- `SignUpScreen`
+
+📌 Usuários autenticados são redirecionados para `/dashboard`
+
+---
+
+### 🔐 Rotas Privadas
+
+#### 📋 Dashboard
+
+- `/dashboard`
+
+Responsável por exibir:
+
+- Lista de tarefas
+- Ações rápidas
+
+---
+
+#### 📁 Projetos
+
+- `/projects`
+- `/projects/:projectId`
+
+Responsável por:
+
+- Agrupamento de tarefas
+- Organização por contexto
+
+---
+
+#### ✅ Tarefas
+
+**Web**
+
+- Utiliza modais (sem rotas dedicadas)
+
+**Mobile**
+
+- `/tasks/create`
+- `/tasks/:taskId`
+- `/tasks/:taskId/edit`
+
+---
+
+#### ⚙️ Configurações
+
+- `/settings`
+
+---
+
+### 🧱 Layout da Aplicação
+
+#### 🌐 Web
+
+```
+/ (App Layout)
+ ├── Sidebar
+ ├── Header
+ └── Content
+```
+
+Rotas incluídas:
+
+- `/dashboard`
+- `/projects`
+- `/settings`
+
+📌 `signin` e `signup` não utilizam esse layout
+
+---
+
+#### 📱 Mobile
+
+```
+Stack (Auth)
+ ├── SignIn
+ └── SignUp
+
+Stack (App)
+ ├── Tabs
+ │    ├── Dashboard
+ │    ├── Projects
+ │    └── Settings
+ ├── TaskCreate
+ ├── TaskDetail
+ └── TaskEdit
+```
 
 ---
 
 ## 🖼️ Wireframes
 
-> Abaixo estão os wireframes utilizados para definir a estrutura e experiência do sistema.
+> ⚠️ Os wireframes apresentados foram gerados com auxílio de Inteligência Artificial e têm como objetivo servir como base conceitual para o design da aplicação. As interfaces finais podem sofrer alterações durante o desenvolvimento.
+
+Abaixo estão os wireframes utilizados para definir a estrutura e experiência do sistema, organizados por plataforma e fluxo de usuário.
 
 ---
 
-# 🌐 Versão Web
+### 🌐 Versão Web
 
-## 📋 Dashboard
+#### 🔐 Autenticação
+
+##### 🔑 Sign In
+
+📌 Wireframe: `/wireframes/web/tela-signin.png`
+
+- Campo de e-mail e senha
+- Botão de login
+- Opção de login com Google e GitHub (futuro)
+- Link para cadastro
+
+---
+
+##### 🆕 Sign Up
+
+📌 Wireframe: `/wireframes/web/tela-signup.png`
+
+- Campos de cadastro (nome, e-mail, senha e confirmação de senha)
+- Botão de criar conta
+- Opção de cadastro com Google e GitHub (futuro)
+
+---
+
+#### 📁 Projetos
+
+##### 📂 Lista de Projetos
+
+📌 Wireframe: `/wireframes/web/tela-projetos.png`
+
+- Lista de projetos do usuário
+- Botão para criar novo projeto
+- Acesso rápido aos projetos
+
+---
+
+##### ➕ Criar / Editar Projeto (Modal)
+
+📌 Wireframe: `/wireframes/web/modal-criar-editar-projeto.png`
+
+- Formulário em modal com campos para nome e descrição
+- Seleção de cor ou identificação visual (opcional)
+- Botões de salvar e cancelar
+
+---
+
+#### 📋 Dashboard e Tarefas
+
+##### 📋 Dashboard
 
 📌 Wireframe: `/wireframes/web/tela-dashboard.png`
-
-![Dashboard Web](./wireframes/web/tela-dashboard.png)
 
 - Navegação lateral (sidebar)
 - Barra superior com ações
@@ -53,161 +209,249 @@ O sistema tem como foco uma experiência simples, intuitiva e rápida, sendo ide
 
 ---
 
-## ➕ Criar / Editar Tarefa (Modal)
+##### ➕ Criar / Editar Tarefa (Modal)
 
-📌 Wireframe: `/wireframes/web/modal-criar-editar-tarefa.png`
-
-![Criar Tarefa Web](./wireframes/web/modal-criar-editar-tarefa.png)
+📌 Wireframe: `/wireframes/web/modal-criar-editar-task.png`
 
 - Formulário em modal
 - Campos para título, descrição e prioridade
 
 ---
 
-## 🔍 Detalhes da Tarefa
+##### 🔍 Detalhes da Tarefa
 
 📌 Wireframe: `/wireframes/web/modal-detalhes-tarefa.png`
-
-![Detalhes Web](./wireframes/web/modal-detalhes-tarefa.png)
 
 - Visualização completa da tarefa
 - Ações de editar e excluir
 
 ---
 
-## ⚙️ Configurações
+#### ⚙️ Configurações
 
 📌 Wireframe: `/wireframes/web/tela-configuracoes.png`
-
-![Configurações Web](./wireframes/web/tela-configuracoes.png)
 
 - Preferências do sistema
 - Configurações de tema e comportamento
 
 ---
 
-# 📱 Versão Mobile
+### 📱 Versão Mobile
 
-## 📋 Dashboard
+#### 🔐 Autenticação
+
+##### 🔑 Sign In
+
+📌 Wireframe: `/wireframes/mobile/tela-signin.png`
+
+- Campo de e-mail e senha
+- Botão de login e link para cadastro
+
+---
+
+##### 🆕 Sign Up
+
+📌 Wireframe: `/wireframes/mobile/tela-signup.png`
+
+- Campos de cadastro e botão de criar conta
+- Navegação simples
+
+---
+
+#### 📁 Projetos
+
+##### 📂 Lista de Projetos
+
+📌 Wireframe: `/wireframes/mobile/tela-projetos.png`
+
+- Lista vertical de projetos
+- Botão de criar projeto
+
+---
+
+##### ➕ Criar / Editar Projeto
+
+📌 Wireframe: `/wireframes/mobile/tela-criar-editar-projeto.png`
+
+- Tela dedicada para criação/edição
+- Campos de nome, descrição e seleção de cor
+- Botão de salvar e navegação simples (voltar/cancelar)
+
+---
+
+#### 📋 Dashboard e Tarefas
+
+##### 📋 Dashboard
 
 📌 Wireframe: `/wireframes/mobile/tela-dashboard.png`
-
-![Dashboard Mobile](./wireframes/mobile/tela-dashboard.png)
 
 - Lista vertical de tarefas
 - Botão de ação flutuante (+)
 
 ---
 
-## ➕ Criar / Editar Tarefa
+##### ➕ Criar / Editar Tarefa
 
 📌 Wireframe: `/wireframes/mobile/tela-criar-editar-tarefa.png`
-
-![Criar Tarefa Mobile](./wireframes/mobile/tela-criar-editar-tarefa.png)
 
 - Tela dedicada para criação/edição
 - Inputs otimizados para mobile
 
 ---
 
-## 🔍 Detalhes da Tarefa
+##### 🔍 Detalhes da Tarefa
 
 📌 Wireframe: `/wireframes/mobile/tela-detalhes-tarefa.png`
-
-![Detalhes Mobile](./wireframes/mobile/tela-detalhes-tarefa.png)
 
 - Visualização simplificada
 - Ações rápidas
 
 ---
 
-## ⚙️ Configurações
+#### ⚙️ Configurações
 
 📌 Wireframe: `/wireframes/mobile/tela-configuracoes.png`
-
-![Configurações Mobile](./wireframes/mobile/tela-configuracoes.png)
 
 - Preferências do usuário
 - Ajustes do aplicativo
 
 ---
 
+## 📊 Diagramas
+
+### 📌 Diagrama de Casos de Uso
+
+```mermaid
+graph LR
+
+    User[👤 Usuário]
+
+    %% Autenticação
+    Login[🔐 Realizar Login]
+    Register[🆕 Criar Conta]
+    SocialLogin[🔗 Login com Google/GitHub]
+
+    User --> Login
+    User --> Register
+    Login -.-> SocialLogin
+
+    %% Projetos
+    ViewProjects[📁 Visualizar Projetos]
+    CreateProject[➕ Criar Projeto]
+    EditProject[✏️ Editar Projeto]
+    DeleteProject[🗑️ Excluir Projeto]
+
+    User --> ViewProjects
+    User --> CreateProject
+    User --> EditProject
+    User --> DeleteProject
+
+    %% Tarefas
+    ViewTasks[📋 Visualizar Tarefas]
+    CreateTask[➕ Criar Tarefa]
+    EditTask[✏️ Editar Tarefa]
+    DeleteTask[🗑️ Excluir Tarefa]
+    CompleteTask[✅ Concluir Tarefa]
+
+    User --> ViewTasks
+    User --> CreateTask
+    User --> EditTask
+    User --> DeleteTask
+    User --> CompleteTask
+
+    %% Organização
+    FilterTasks[🔍 Filtrar Tarefas]
+    SortTasks[↕️ Ordenar Tarefas]
+
+    ViewTasks --> FilterTasks
+    ViewTasks --> SortTasks
+
+    %% Configurações
+    Settings[⚙️ Gerenciar Configurações]
+
+    User --> Settings
+```
+
+---
+
 ## 🧩 Tecnologias
 
-> Será definido após o desenvolvimento.
+### 🎨 Frontend (Web)
+
+- React
+- TypeScript
+- Vite
+
+### 📱 Mobile
+
+- React Native
+
+### ⚙️ Backend
+
+- Python (FastAPI)
+
+### 🗄️ Database
+
+- PostgreSQL
+
+### 🔧 Arquitetura e Ferramentas
+
+- API REST
+- JWT (autenticação)
+- Context API / Zustand (estado)
 
 ---
 
 ## 🚀 Roadmap
 
-### 🌐 Web
+### 🔐 Autenticação
 
-#### 📋 Dashboard
+- [ ] Login
+- [ ] Cadastro
+- [ ] Validação de formulário
+- [ ] Sessão de usuário
 
-- [ ] Listar tarefas
-- [ ] Marcar como concluída
-- [ ] Excluir tarefa
+---
+
+### 📁 Projetos
+
+- [ ] Criar projeto
+- [ ] Editar projeto
+- [ ] Excluir projeto
+- [ ] Listar projetos
 - [ ] Filtros
 - [ ] Ordenação
 
-#### ➕ Criar / Editar
+---
 
-- [ ] Criar tarefa
-- [ ] Editar tarefa
-- [ ] Definir prioridade
-- [ ] Validação
+### 📋 Tarefas
 
-#### 🔍 Detalhes
-
-- [ ] Exibir dados completos
-- [ ] Editar
-- [ ] Excluir
-
-#### ⚙️ Configurações
-
-- [ ] Tema
-- [ ] Preferências
-- [ ] Comportamento padrão
+- [ ] CRUD completo
+- [ ] Filtros
+- [ ] Ordenação
+- [ ] Prioridades
+- [ ] Vincular a projetos
 
 ---
 
-### 📱 Mobile
+### ⚙️ Configurações
 
-#### 📋 Tela principal
-
-- [ ] Listagem otimizada
-- [ ] Ações rápidas
-- [ ] Navegação simples
-
-#### ➕ Criar / Editar
-
-- [ ] Formulário mobile
-- [ ] Inputs otimizados
-
-#### 🔍 Detalhes
-
-- [ ] Visualização simplificada
-- [ ] Ações rápidas
-
-#### ⚙️ Configurações
-
-- [ ] Ajustes do app
-- [ ] Preferências
+- [ ] Tema (light/dark)
+- [ ] Preferências do usuário
+- [ ] Conta
 
 ---
 
-## 💡 Atualizações futuras
+## 💡 Melhorias Futuras
 
-- Drag and drop de tarefas
+- Login com Google
+- Login com GitHub
 - Notificações em tempo real
-- Tema dark/light avançado
-- Melhorias de responsividade
-- Histórico de atividades
-- Integração com calendário
-- Compartilhamento de tarefas
-- Sistema de categorias/tags
+- Drag and drop
 - Modo offline
 - Sincronização entre dispositivos
+- Compartilhamento de projetos
+- Integração com calendário
 
 ---
 
