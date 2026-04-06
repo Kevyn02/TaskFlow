@@ -453,7 +453,9 @@ Abaixo estão os wireframes utilizados para definir a estrutura e experiência d
 
 ### 📌 Diagrama de Casos de Uso
 
-```mermaid id="u9k2x1"
+#### Diagrama de Autenticação
+
+```mermaid id="seq-authentication"
 graph TD
 
     User[👤 Usuário]
@@ -473,6 +475,14 @@ graph TD
     Register --> Authenticated
     Login --> Authenticated
     SocialLogin --> Authenticated
+```
+
+#### Diagrama de Funcionalidades da aplicação
+
+```mermaid id="seq-app-functions"
+graph TD
+
+    Authenticated[🔓 Usuário Autenticado]
 
     %% Projetos
     subgraph PROJECTS[📁 Projetos]
@@ -482,15 +492,23 @@ graph TD
         DeleteProject[🗑️ Excluir Projeto]
     end
 
+     %% Status (por projeto)
+    subgraph PROJECT_STATUS[📊 Status]
+        CreateStatus[➕ Criar Status]
+        EditStatus[✏️ Editar Status]
+        DeleteStatus[🗑️ Excluir Status]
+    end
+
     %% Tarefas
     subgraph TASKS[📋 Tarefas]
         ViewTasks[📋 Visualizar Tarefas]
         CreateTask[➕ Criar Tarefa]
         EditTask[✏️ Editar Tarefa]
         DeleteTask[🗑️ Excluir Tarefa]
-        CompleteTask[✅ Concluir Tarefa]
+        ChangeStatus[🔄 Alterar Status]
         FilterTasks[🔍 Filtrar Tarefas]
         SortTasks[↕️ Ordenar Tarefas]
+        SetPriority[⚡ Definir Prioridade]
     end
 
     %% Configurações
@@ -508,12 +526,27 @@ graph TD
     Authenticated --> CreateTask
     Authenticated --> EditTask
     Authenticated --> DeleteTask
-    Authenticated --> CompleteTask
+    Authenticated --> ChangeStatus
+    Authenticated --> SetPriority
+
+    Authenticated --> CreateStatus
+    Authenticated --> EditStatus
+    Authenticated --> DeleteStatus
 
     ViewTasks --> FilterTasks
     ViewTasks --> SortTasks
 
     Authenticated --> Settings
+
+    %% Relação de projeto com status
+    CreateProject --> CreateStatus
+    CreateProject --> EditStatus
+    CreateProject --> DeleteStatus
+
+    %% Relação de status com tarefas
+    CreateStatus --> ChangeStatus
+    EditStatus --> ChangeStatus
+    DeleteStatus --> ChangeStatus
 ```
 
 ---
