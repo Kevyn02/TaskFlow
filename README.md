@@ -1222,40 +1222,40 @@ stateDiagram-v2
 
 #### 🔐 Autenticação
 
-- [ ] RF01: O sistema deve permitir o cadastro de usuários (#1)
-- [ ] RF02: O sistema deve permitir o login de usuários (#2)
-- [ ] RF03: O sistema deve permitir o logout do sistema (#3)
-- [ ] RF04: O sistema deve validar as credenciais informadas (#4)
+- [ ] RF01: O sistema deve permitir o cadastro de usuários ([#1](../../issues/1))
+- [ ] RF02: O sistema deve permitir o login de usuários ([#2](../../issues/2))
+- [ ] RF03: O sistema deve permitir o logout do sistema ([#3](../../issues/3))
+- [ ] RF04: O sistema deve validar as credenciais informadas ([#4](../../issues/4))
 
 ---
 
 #### 📊 Dashboard
 
-- [ ] RF05: O sistema deve exibir um resumo geral das informações (#5)
-- [ ] RF06: O sistema deve listar tarefas recentes (#6)
-- [ ] RF07: O sistema deve exibir projetos do usuário (#7)
+- [ ] RF05: O sistema deve exibir um resumo geral das informações ([#5](../../issues/5))
+- [ ] RF06: O sistema deve listar tarefas recentes ([#6](../../issues/6))
+- [ ] RF07: O sistema deve exibir projetos do usuário ([#7](../../issues/7))
 
 ---
 
 #### 📁 Projetos
 
-- [ ] RF08: O sistema deve permitir a criação de projetos (#8)
-- [ ] RF09: O sistema deve permitir a edição de projetos (#9)
-- [ ] RF10: O sistema deve permitir a exclusão de projetos (#10)
-- [ ] RF11: O sistema deve listar todos os projetos cadastrados (#11)
-- [ ] RF12: O sistema deve exibir os detalhes de um projeto (#12)
-- [ ] RF13: O sistema deve utilizar modal para criação e edição de projetos (#13)
+- [ ] RF08: O sistema deve permitir a criação de projetos ([#8](../../issues/8))
+- [ ] RF09: O sistema deve permitir a edição de projetos ([#9](../../issues/9))
+- [ ] RF10: O sistema deve permitir a exclusão de projetos ([#10](../../issues/10))
+- [ ] RF11: O sistema deve listar todos os projetos cadastrados ([#11](../../issues/11))
+- [ ] RF12: O sistema deve exibir os detalhes de um projeto ([#12](../../issues/12))
+- [ ] RF13: O sistema deve utilizar modal para criação e edição de projetos ([#13](../../issues/13))
 
 ---
 
 #### ✅ Tarefas
 
-- [ ] RF14: O sistema deve permitir a criação de tarefas (#14)
-- [ ] RF15: O sistema deve permitir a edição de tarefas (#15)
-- [ ] RF16: O sistema deve permitir a exclusão de tarefas (#16)
-- [ ] RF17: O sistema deve permitir marcar tarefas como concluídas (#17)
-- [ ] RF18: O sistema deve listar tarefas por projeto (#18)
-- [ ] RF19: O sistema deve exibir o status das tarefas (#19)
+- [ ] RF14: O sistema deve permitir a criação de tarefas ([#14](../../issues/14))
+- [ ] RF15: O sistema deve permitir a edição de tarefas ([#15](../../issues/15))
+- [ ] RF16: O sistema deve permitir a exclusão de tarefas ([#16](../../issues/16))
+- [ ] RF17: O sistema deve permitir marcar tarefas como concluídas ([#17](../../issues/17))
+- [ ] RF18: O sistema deve listar tarefas por projeto ([#18](../../issues/18))
+- [ ] RF19: O sistema deve exibir o status das tarefas ([#19](../../issues/19))
 
 ---
 
@@ -1263,46 +1263,46 @@ stateDiagram-v2
 
 #### ⚡ Performance
 
-- [ ] RNF01: O sistema deve responder requisições em até 2 segundos (#20)
-- [ ] RNF02: O sistema deve possuir carregamento otimizado (#21)
-- [ ] RNF03: O sistema deve utilizar paginação ou carregamento sob demanda nas listas (#22)
+- [ ] RNF01: O sistema deve responder requisições em até 2 segundos ([#20](../../issues/20))
+- [ ] RNF02: O sistema deve possuir carregamento otimizado ([#21](../../issues/21))
+- [ ] RNF03: O sistema deve utilizar paginação ou carregamento sob demanda nas listas ([#22](../../issues/22))
 
 ---
 
 #### 🔒 Segurança
 
-- [ ] RNF04: O sistema deve garantir autenticação segura (#23)
-- [ ] RNF05: O sistema deve proteger os dados do usuário (#24)
-- [ ] RNF06: O sistema deve validar todas as entradas de dados (#25)
+- [ ] RNF04: O sistema deve garantir autenticação segura ([#23](../../issues/23))
+- [ ] RNF05: O sistema deve proteger os dados do usuário ([#24](../../issues/24))
+- [ ] RNF06: O sistema deve validar todas as entradas de dados ([#25](../../issues/25))
 
 ---
 
 #### 🧩 Usabilidade
 
-- [ ] RNF07: O sistema deve possuir interface intuitiva (#26)
-- [ ] RNF08: O sistema deve apresentar feedback visual (carregamento, erro e sucesso) (#27)
-- [ ] RNF09: O sistema deve possuir estados bem definidos (vazio, carregando, erro) (#28)
+- [ ] RNF07: O sistema deve possuir interface intuitiva ([#26](../../issues/26))
+- [ ] RNF08: O sistema deve apresentar feedback visual (carregamento, erro e sucesso) ([#27](../../issues/27))
+- [ ] RNF09: O sistema deve possuir estados bem definidos (vazio, carregando, erro) ([#28](../../issues/28))
 
 ---
 
 #### 📱 Responsividade
 
-- [ ] RNF10: O sistema deve ser responsivo (desktop e mobile) (#29)
-- [ ] RNF11: O layout deve se adaptar a diferentes tamanhos de tela (#30)
+- [ ] RNF10: O sistema deve ser responsivo (desktop e mobile) ([#29](../../issues/29))
+- [ ] RNF11: O layout deve se adaptar a diferentes tamanhos de tela ([#30](../../issues/30))
 
 ---
 
 #### 🔄 Escalabilidade
 
-- [ ] RNF12: O sistema deve suportar múltiplos usuários simultaneamente (#31)
-- [ ] RNF13: O sistema deve possuir arquitetura escalável (#32)
+- [ ] RNF12: O sistema deve suportar múltiplos usuários simultaneamente ([#31](../../issues/31))
+- [ ] RNF13: O sistema deve possuir arquitetura escalável ([#32](../../issues/32))
 
 ---
 
 #### 🛠️ Manutenibilidade
 
-- [ ] RNF14: O código deve ser organizado por responsabilidade (#33)
-- [ ] RNF15: O sistema deve ser modular e de fácil manutenção (#34)
+- [ ] RNF14: O código deve ser organizado por responsabilidade ([#33](../../issues/33))
+- [ ] RNF15: O sistema deve ser modular e de fácil manutenção ([#34](../../issues/34))
 
 ## 🚀 Roadmap do Projeto
 
