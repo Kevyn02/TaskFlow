@@ -1032,7 +1032,7 @@ sequenceDiagram
     end
 ```
 
-### Diagramas de Estados
+### 🧠 Diagramas de Estados
 
 #### Autenticação
 
