@@ -796,7 +796,7 @@ sequenceDiagram
 
 #### Status (CRUD Completo)
 
-```mermaid id="seq-tasks-crud"
+```mermaid id="seq-project-status-crud"
 sequenceDiagram
     autonumber
     participant U as 👤 Usuário
