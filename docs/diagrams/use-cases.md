@@ -1,3 +1,5 @@
+← Voltar para [Diagramas](../diagrams.md)
+
 ## 📌 Diagrama de Casos de Uso
 
 ### Diagrama de Autenticação

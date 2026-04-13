@@ -1,3 +1,5 @@
+← Voltar para [Documentação](../README.md)
+
 ## 📊 Diagramas
 
 O projeto está documentado através dos seguintes diagramas:

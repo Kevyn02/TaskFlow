@@ -1,8 +1,8 @@
+← Voltar para [Documentação](../README.md)
+
 ## 🧭 Arquitetura de Rotas
 
 A aplicação é organizada em dois grupos principais: **rotas públicas** e **rotas privadas**, separando o fluxo de autenticação do restante do sistema.
-
----
 
 ### 🔓 Rotas Públicas
 

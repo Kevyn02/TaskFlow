@@ -1,3 +1,5 @@
+← Voltar para [Diagramas](../diagrams.md)
+
 ## 🧩 Diagrama ER (Entidade - Relacionamento)
 
 ### Diagrama ER — Usuários e Projetos

@@ -1,10 +1,10 @@
+← Voltar para [Documentação](../README.md)
+
 ## 🖼️ Wireframes
 
 > ⚠️ Os wireframes apresentados foram gerados com auxílio de Inteligência Artificial e têm como objetivo servir como base conceitual para o design da aplicação. As interfaces finais podem sofrer alterações durante o desenvolvimento.
 
 Abaixo estão os wireframes utilizados para definir a estrutura e experiência do sistema, organizados por plataforma e fluxo de usuário.
-
----
 
 ### 🌐 Versão Web
 

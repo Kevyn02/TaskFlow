@@ -53,7 +53,7 @@ O sistema permite que usuários gerenciem suas tarefas de forma eficiente, organ
 
 A aplicação é organizada em rotas públicas e privadas, separando o fluxo de autenticação do restante do sistema.
 
-👉 Veja a estrutura completa em: [Arquitetura de Rotas](./docs/rotas.md)
+👉 Veja a estrutura completa em: [Arquitetura de Rotas](./docs/rotes.md)
 
 ## 🧱 Layout da Aplicação
 
@@ -82,7 +82,7 @@ O sistema possui diversos diagramas para representar seu funcionamento:
 - Diagramas de estados
 - Diagrama entidade-relacionamento (ER)
 
-👉 Acesse todos em: [Diagramas](./docs/diagramas.md)
+👉 Acesse todos em: [Diagramas](./docs/diagrams.md)
 
 ## 🧩 Tecnologias
 

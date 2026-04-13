@@ -1,6 +1,8 @@
-# 🔄 Diagramas de Sequência
+← Voltar para [Diagramas](../diagrams.md)
 
-## Login (Email e Senha)
+## 🔄 Diagramas de Sequência
+
+### Login (Email e Senha)
 
 ```mermaid id="seq-login-basic"
 sequenceDiagram
@@ -43,7 +45,7 @@ sequenceDiagram
     end
 ```
 
-## Cadastro (Sign Up)
+### Cadastro (Sign Up)
 
 ```mermaid id="seq-signup-basic"
 sequenceDiagram
@@ -89,7 +91,7 @@ sequenceDiagram
     end
 ```
 
-## Login/Cadastro com Google/GitHub
+### Login/Cadastro com Google/GitHub
 
 ```mermaid id="seq-social-auth"
 sequenceDiagram
@@ -140,7 +142,7 @@ sequenceDiagram
     end
 ```
 
-## Projetos (CRUD Completo)
+### Projetos (CRUD Completo)
 
 ```mermaid id="seq-projects-crud"
 sequenceDiagram
@@ -241,7 +243,7 @@ sequenceDiagram
     end
 ```
 
-## Status (CRUD Completo)
+### Status (CRUD Completo)
 
 ```mermaid id="seq-project-status-crud"
 sequenceDiagram
@@ -342,7 +344,7 @@ sequenceDiagram
     end
 ```
 
-## Tarefas (CRUD Completo)
+### Tarefas (CRUD Completo)
 
 ```mermaid id="seq-tasks-crud"
 sequenceDiagram

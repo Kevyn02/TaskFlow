@@ -1,3 +1,5 @@
+← Voltar para [Diagramas](../diagrams.md)
+
 ## 🧠 Diagramas de Estados
 
 ### Autenticação

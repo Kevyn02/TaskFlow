@@ -1,8 +1,8 @@
+← Voltar para [Documentação](../README.md)
+
 ## 🧱 Layout da Aplicação
 
 Define a estrutura visual e organizacional das telas da aplicação, separando o fluxo de autenticação do restante do sistema.
-
----
 
 ### 🌐 Web
 
