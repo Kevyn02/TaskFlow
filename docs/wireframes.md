@@ -2,17 +2,29 @@
 
 ## 🖼️ Wireframes
 
-> ⚠️ Os wireframes apresentados foram gerados com auxílio de Inteligência Artificial e têm como objetivo servir como base conceitual para o design da aplicação. As interfaces finais podem sofrer alterações durante o desenvolvimento.
+> ⚠️ Os wireframes apresentados foram gerados com auxílio de Inteligência Artificial e têm como objetivo servir como base conceitual para o design da aplicação.
+> Eles representam a estrutura inicial das interfaces e fluxos do sistema, podendo sofrer alterações ao longo do desenvolvimento conforme evolução do produto.
 
 Abaixo estão os wireframes utilizados para definir a estrutura e experiência do sistema, organizados por plataforma e fluxo de usuário.
 
-### 🌐 Versão Web
+---
+
+## 📑 Índice
+
+- [🌐 Versão Web](#-versão-web)
+- [📱 Versão Mobile](#-versão-mobile)
+
+---
+
+## 🌐 Versão Web
 
 #### 🔐 Autenticação
 
 ##### 🔑 Sign In
 
-📌 Wireframe: `/wireframes/web/tela-signin.png`
+📌 Wireframe: `/wireframes/web/sign-in-page.png`
+
+![Sign In Web](./wireframes/web/sign-in-page.png)
 
 - Campo de e-mail e senha
 - Botão de login
@@ -23,7 +35,9 @@ Abaixo estão os wireframes utilizados para definir a estrutura e experiência d
 
 ##### 🆕 Sign Up
 
-📌 Wireframe: `/wireframes/web/tela-signup.png`
+📌 Wireframe: `/wireframes/web/sign-up-page.png`
+
+![Sign Up Web](./wireframes/web/sign-up-page.png)
 
 - Campos de cadastro (nome, e-mail, senha e confirmação de senha)
 - Botão de criar conta
@@ -31,11 +45,25 @@ Abaixo estão os wireframes utilizados para definir a estrutura e experiência d
 
 ---
 
+#### 📋 Dashboard
+
+📌 Wireframe: `/wireframes/web/dashboard-page.png`
+
+![Dashboard Web](./wireframes/web/dashboard-page.png)
+
+- Navegação lateral (sidebar)
+- Barra superior com ações
+- Lista de tarefas com ações rápidas
+
+---
+
 #### 📁 Projetos
 
 ##### 📂 Lista de Projetos
 
-📌 Wireframe: `/wireframes/web/tela-projetos.png`
+📌 Wireframe: `/wireframes/web/projects-page.png`
+
+![Lista de Projetos Web](./wireframes/web/projects-page.png)
 
 - Lista de projetos do usuário
 - Botão para criar novo projeto
@@ -45,7 +73,9 @@ Abaixo estão os wireframes utilizados para definir a estrutura e experiência d
 
 ##### ➕ Criar / Editar Projeto (Modal)
 
-📌 Wireframe: `/wireframes/web/modal-criar-editar-projeto.png`
+📌 Wireframe: `/wireframes/web/create-edit-project-modal.png`
+
+![Criar / Editar Projeto Web](./wireframes/web/create-edit-project-modal.png)
 
 - Formulário em modal com campos para nome e descrição
 - Seleção de cor ou identificação visual (opcional)
@@ -53,21 +83,36 @@ Abaixo estão os wireframes utilizados para definir a estrutura e experiência d
 
 ---
 
-#### 📋 Dashboard e Tarefas
+##### ❌ Excluir Projeto (Modal)
 
-##### 📋 Dashboard
+📌 Wireframe: `/wireframes/web/delete-project-modal.png`
 
-📌 Wireframe: `/wireframes/web/tela-dashboard.png`
+![Excluir Projeto Web](./wireframes/web/delete-project-modal.png)
 
-- Navegação lateral (sidebar)
-- Barra superior com ações
-- Lista de tarefas com ações rápidas
+- Formulário em modal com campos para motivo e confirmação de senha para exclusão de projeto
+- Botões de excluir e cancelar
+
+---
+
+#### 📋 Tarefas
+
+##### 📂 Lista de Tarefas
+
+📌 Wireframe: `/wireframes/web/tasks-page.png`
+
+![Lista de Tarefas Web](./wireframes/web/tasks-page.png)
+
+- Lista de tarefas do usuário
+- Botão para criar nova tarefa
+- Acesso rápido às tarefas
 
 ---
 
 ##### ➕ Criar / Editar Tarefa (Modal)
 
-📌 Wireframe: `/wireframes/web/modal-criar-editar-task.png`
+📌 Wireframe: `/wireframes/web/create-edit-task-modal.png`
+
+![Criar / Editar Tarefa Web](./wireframes/web/create-edit-task-modal.png)
 
 - Formulário em modal
 - Campos para título, descrição e prioridade
@@ -76,41 +121,75 @@ Abaixo estão os wireframes utilizados para definir a estrutura e experiência d
 
 ##### 🔍 Detalhes da Tarefa
 
-📌 Wireframe: `/wireframes/web/modal-detalhes-tarefa.png`
+📌 Wireframe: `/wireframes/web/task-details-modal.png`
+
+![Detalhes da Tarefa Web](./wireframes/web/task-details-modal.png)
 
 - Visualização completa da tarefa
 - Ações de editar e excluir
 
 ---
 
+##### ❌ Excluir Tarefa (Modal)
+
+📌 Wireframe: `/wireframes/web/delete-task-modal.png`
+
+![Excluir Tarefa Web](./wireframes/web/delete-task-modal.png)
+
+- Formulário em modal com campos para motivo e confirmação de senha para exclusão de tarefa
+- Botões de excluir e cancelar
+
+---
+
 #### ⚙️ Configurações
 
-📌 Wireframe: `/wireframes/web/tela-configuracoes.png`
+📌 Wireframe: `/wireframes/web/settings-page.png`
+
+![Configurações Web](./wireframes/web/settings-page.png)
 
 - Preferências do sistema
 - Configurações de tema e comportamento
 
 ---
 
-### 📱 Versão Mobile
+## 📱 Versão Mobile
 
 #### 🔐 Autenticação
 
 ##### 🔑 Sign In
 
-📌 Wireframe: `/wireframes/mobile/tela-signin.png`
+📌 Wireframe: `/wireframes/mobile/sign-in-screen.png`
+
+![Sign In Mobile](./wireframes/mobile/sign-in-screen.png)
 
 - Campo de e-mail e senha
-- Botão de login e link para cadastro
+- Botão de login
+- Opção de login com Google e GitHub (futuro)
+- Link para cadastro
 
 ---
 
 ##### 🆕 Sign Up
 
-📌 Wireframe: `/wireframes/mobile/tela-signup.png`
+📌 Wireframe: `/wireframes/mobile/sign-up-screen.png`
 
-- Campos de cadastro e botão de criar conta
-- Navegação simples
+![Sign Up Mobile](./wireframes/mobile/sign-up-screen.png)
+
+- Campos de cadastro (nome, e-mail, senha e confirmação de senha)
+- Botão de criar conta
+- Opção de cadastro com Google e GitHub (futuro)
+
+---
+
+#### 📋 Dashboard
+
+📌 Wireframe: `/wireframes/mobile/dashboard-screen.png`
+
+![Dashboard Mobile](./wireframes/mobile/dashboard-screen.png)
+
+- Navegação inferior (bottom navigation) ou menu hambúrguer
+- Ações rápidas no topo
+- Lista de tarefas
 
 ---
 
@@ -118,57 +197,97 @@ Abaixo estão os wireframes utilizados para definir a estrutura e experiência d
 
 ##### 📂 Lista de Projetos
 
-📌 Wireframe: `/wireframes/mobile/tela-projetos.png`
+📌 Wireframe: `/wireframes/mobile/projects-screen.png`
 
-- Lista vertical de projetos
-- Botão de criar projeto
+![Lista de Projetos Mobile](./wireframes/mobile/projects-screen.png)
 
----
-
-##### ➕ Criar / Editar Projeto
-
-📌 Wireframe: `/wireframes/mobile/tela-criar-editar-projeto.png`
-
-- Tela dedicada para criação/edição
-- Campos de nome, descrição e seleção de cor
-- Botão de salvar e navegação simples (voltar/cancelar)
+- Lista de projetos do usuário
+- Botão flutuante (FAB) para criar novo projeto
+- Acesso rápido aos projetos
 
 ---
 
-#### 📋 Dashboard e Tarefas
+##### ➕ Criar / Editar Projeto (Tela)
 
-##### 📋 Dashboard
+📌 Wireframe: `/wireframes/mobile/create-edit-project-screen.png`
 
-📌 Wireframe: `/wireframes/mobile/tela-dashboard.png`
+![Criar / Editar Projeto Mobile](./wireframes/mobile/create-edit-project-screen.png)
 
-- Lista vertical de tarefas
-- Botão de ação flutuante (+)
+- Tela dedicada com formulário
+- Campos para nome e descrição
+- Seleção de cor ou identificação visual (opcional)
+- Botões de salvar e voltar
 
 ---
 
-##### ➕ Criar / Editar Tarefa
+##### ❌ Excluir Projeto (Tela)
 
-📌 Wireframe: `/wireframes/mobile/tela-criar-editar-tarefa.png`
+📌 Wireframe: `/wireframes/mobile/delete-project-screen.png`
 
-- Tela dedicada para criação/edição
-- Inputs otimizados para mobile
+![Excluir Projeto Mobile](./wireframes/mobile/delete-project-screen.png)
+
+- Tela de confirmação de exclusão
+- Campos para motivo e confirmação de senha
+- Botões de excluir e cancelar
+
+---
+
+#### 📋 Tarefas
+
+##### 📂 Lista de Tarefas
+
+📌 Wireframe: `/wireframes/mobile/tasks-screen.png`
+
+![Lista de Tarefas Mobile](./wireframes/mobile/tasks-screen.png)
+
+- Lista de tarefas do usuário
+- Botão flutuante (FAB) para criar nova tarefa
+- Acesso rápido às tarefas
+
+---
+
+##### ➕ Criar / Editar Tarefa (Tela)
+
+📌 Wireframe: `/wireframes/mobile/create-edit-task-screen.png`
+
+![Criar / Editar Tarefa Mobile](./wireframes/mobile/create-edit-task-screen.png)
+
+- Tela dedicada com formulário
+- Campos para título, descrição e prioridade
+- Botões de salvar e voltar
 
 ---
 
 ##### 🔍 Detalhes da Tarefa
 
-📌 Wireframe: `/wireframes/mobile/tela-detalhes-tarefa.png`
+📌 Wireframe: `/wireframes/mobile/task-details-screen.png`
 
-- Visualização simplificada
-- Ações rápidas
+![Detalhes da Tarefa Mobile](./wireframes/mobile/task-details-screen.png)
+
+- Visualização completa da tarefa
+- Ações de editar e excluir
+
+---
+
+##### ❌ Excluir Tarefa (Tela)
+
+📌 Wireframe: `/wireframes/mobile/delete-task-screen.png`
+
+![Excluir Tarefa Mobile](./wireframes/mobile/delete-task-screen.png)
+
+- Tela de confirmação de exclusão
+- Campos para motivo e confirmação de senha
+- Botões de excluir e cancelar
 
 ---
 
 #### ⚙️ Configurações
 
-📌 Wireframe: `/wireframes/mobile/tela-configuracoes.png`
+📌 Wireframe: `/wireframes/mobile/settings-screen.png`
 
-- Preferências do usuário
-- Ajustes do aplicativo
+![Configurações Mobile](./wireframes/mobile/settings-screen.png)
+
+- Preferências do sistema
+- Configurações de tema e comportamento
 
 ---
