@@ -16,7 +16,7 @@ Abaixo estão os wireframes utilizados para definir a estrutura e experiência d
 
 ---
 
-## 🌐 Versão Web
+### 🌐 Versão Web
 
 #### 🔐 Autenticação
 
@@ -71,6 +71,23 @@ Abaixo estão os wireframes utilizados para definir a estrutura e experiência d
 
 ---
 
+##### 🔍 Detalhes do Projeto
+
+📌 Wireframe: `/wireframes/web/project-details-page.png`
+
+![Detalhes do Projeto Web v1](./wireframes/web/project-details-page.png)
+
+📌 Wireframe: `/wireframes/web/project-details-page-v2.png`
+
+![Detalhes do Projeto Web v2](./wireframes/web/project-details-page-v2.png)
+
+- Visualização completa do projeto
+- Lista de tarefas relacionadas
+- Exibição dos status do projeto
+- Ações de editar e excluir projeto
+
+---
+
 ##### ➕ Criar / Editar Projeto (Modal)
 
 📌 Wireframe: `/wireframes/web/create-edit-project-modal.png`
@@ -90,6 +107,44 @@ Abaixo estão os wireframes utilizados para definir a estrutura e experiência d
 ![Excluir Projeto Web](./wireframes/web/delete-project-modal.png)
 
 - Formulário em modal com campos para motivo e confirmação de senha para exclusão de projeto
+- Botões de excluir e cancelar
+
+---
+
+#### 🏷️ Status
+
+##### 📂 Gerenciamento de Status
+
+📌 Wireframe: `/wireframes/web/project-status-modal.png`
+
+![Gerenciamento de Status Web](./wireframes/web/project-status-modal.png)
+
+- Lista de status do projeto
+- Ordenação e organização dos status
+- Botão para criar novo status
+
+---
+
+##### ➕ Criar / Editar Status (Modal)
+
+📌 Wireframe: `/wireframes/web/create-edit-project-status-modal.png`
+
+![Criar / Editar Status Web](./wireframes/web/create-edit-project-status-modal.png)
+
+- Formulário em modal
+- Campo para nome do status
+- Seleção de cor ou identificação visual
+- Botões de salvar e cancelar
+
+---
+
+##### ❌ Excluir Status (Modal)
+
+📌 Wireframe: `/wireframes/web/delete-project-status-modal.png`
+
+![Excluir Status Web](./wireframes/web/delete-project-status-modal.png)
+
+- Confirmação de exclusão
 - Botões de excluir e cancelar
 
 ---
@@ -152,7 +207,7 @@ Abaixo estão os wireframes utilizados para definir a estrutura e experiência d
 
 ---
 
-## 📱 Versão Mobile
+### 📱 Versão Mobile
 
 #### 🔐 Autenticação
 
@@ -207,6 +262,23 @@ Abaixo estão os wireframes utilizados para definir a estrutura e experiência d
 
 ---
 
+##### 🔍 Detalhes do Projeto
+
+📌 Wireframe: `/wireframes/mobile/project-details-screen.png`
+
+![Detalhes do Projeto Mobile v1](./wireframes/mobile/project-details-screen.png)
+
+📌 Wireframe: `/wireframes/mobile/project-details-screen-v2.png`
+
+![Detalhes do Projeto Mobile v2](./wireframes/mobile/project-details-screen-v2.png)
+
+- Visualização completa do projeto
+- Lista de tarefas relacionadas
+- Exibição dos status do projeto
+- Ações de editar e excluir projeto
+
+---
+
 ##### ➕ Criar / Editar Projeto (Tela)
 
 📌 Wireframe: `/wireframes/mobile/create-edit-project-screen.png`
@@ -228,6 +300,44 @@ Abaixo estão os wireframes utilizados para definir a estrutura e experiência d
 
 - Tela de confirmação de exclusão
 - Campos para motivo e confirmação de senha
+- Botões de excluir e cancelar
+
+---
+
+#### 🏷️ Status
+
+##### 📂 Gerenciamento de Status
+
+📌 Wireframe: `/wireframes/mobile/project-status-screen.png`
+
+![Gerenciamento de Status Mobile](./wireframes/mobile/project-status-screen.png)
+
+- Lista de status do projeto
+- Organização dos status
+- Botão flutuante (FAB) para criar novo status
+
+---
+
+##### ➕ Criar / Editar Status (Tela)
+
+📌 Wireframe: `/wireframes/mobile/create-edit-project-status-screen.png`
+
+![Criar / Editar Status Mobile](./wireframes/mobile/create-edit-project-status-screen.png)
+
+- Tela dedicada com formulário
+- Campo para nome do status
+- Seleção de cor ou identificação visual
+- Botões de salvar e voltar
+
+---
+
+##### ❌ Excluir Status (Tela)
+
+📌 Wireframe: `/wireframes/mobile/delete-project-status-screen.png`
+
+![Excluir Status Mobile](./wireframes/mobile/delete-project-status-screen.png)
+
+- Tela de confirmação de exclusão
 - Botões de excluir e cancelar
 
 ---
