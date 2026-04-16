@@ -1,4 +1,10 @@
-← Voltar para [Documentação](../README.md)
+← [Voltar para Início](../../README.md)
+
+---
+
+[Início](../../README.md) / Diagramas
+
+---
 
 ## 📊 Diagramas
 
@@ -11,11 +17,11 @@ Representam as principais interações do usuário com o sistema:
 - Autenticação
 - Funcionalidades da aplicação
   - Projetos
-  - Status (por projeto)
-  - Tarefas
+  - Colunas (por projeto)
+  - Tarefas (por projeto)
   - Configurações
 
-👉 Acesse: [Casos de Uso](./diagrams/use-cases.md)
+👉 Acesse: [Casos de Uso](./use-cases/README.md)
 
 ---
 
@@ -30,7 +36,7 @@ Representam o fluxo de execução das principais operações:
 - CRUD de Status
 - CRUD de Tarefas
 
-👉 Acesse: [Sequência](./diagrams/sequences.md)
+👉 Acesse: [Sequência](./sequences/README.md)
 
 ---
 
@@ -43,7 +49,7 @@ Representam os estados possíveis das entidades do sistema:
 - Status do Projeto
 - Tarefas
 
-👉 Acesse: [Estados](./diagrams/states.md)
+👉 Acesse: [Estados](./states/README.md)
 
 ---
 
@@ -54,4 +60,4 @@ Representa a estrutura de dados e relacionamentos do sistema:
 - Usuários e Projetos
 - Tarefas e Membros
 
-👉 Acesse: [ER](./diagrams/er.md)
+👉 Acesse: [ER](./er/README.md)

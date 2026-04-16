@@ -65,13 +65,13 @@ Define a estrutura visual da aplicação para web e mobile, incluindo navegaçã
 
 Os wireframes foram utilizados como base para definição da interface e experiência do usuário nas versões web e mobile.
 
-👉 Veja todos os wireframes em: [Wireframes](./docs/wireframes.md)
+👉 Veja todos os wireframes em: [Wireframes](./docs/wireframes/README.md)
 
 ## 🗄️ Banco de Dados
 
 O sistema utiliza um modelo relacional com suporte a usuários, projetos e tarefas.
 
-👉 Veja a modelagem completa em: [Database](./docs/database.md)
+👉 Veja a modelagem completa em: [Banco de Dados](./docs/database.md)
 
 ## 📊 Diagramas
 
@@ -82,7 +82,7 @@ O sistema possui diversos diagramas para representar seu funcionamento:
 - Diagramas de estados
 - Diagrama entidade-relacionamento (ER)
 
-👉 Acesse todos em: [Diagramas](./docs/diagrams.md)
+👉 Acesse todos em: [Diagramas](./docs/diagrams/README.md)
 
 ## 🧩 Tecnologias
 
