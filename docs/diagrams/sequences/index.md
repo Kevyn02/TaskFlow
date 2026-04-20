@@ -2,11 +2,11 @@ Voltar para [📊 Diagramas](../index.md)
 
 ---
 
-[Início](../../../README.md) | [📊 Diagramas](../index.md) | 📌 Diagrama de Casos de Uso
+[Início](../../../README.md) | [📊 Diagramas](../index.md) | 🔄 Diagramas de Sequência
 
 ---
 
-## 📌 Diagrama de Casos de Uso
+## 🔄 Diagramas de Sequência
 
 👉 [Abrir documentação completa](./completed.md)
 
@@ -16,6 +16,6 @@ Voltar para [📊 Diagramas](../index.md)
 
 - [Autenticação](./auth/index.md)
 - [Projetos](./projects/index.md)
-- [Colunas (por projeto)](./project-columns/index.md)
 - [Tarefas (por projeto)](./project-tasks/index.md)
+- [Colunas (por projeto)](./project-columns/index.md)
 - [Configurações](./settings/index.md)

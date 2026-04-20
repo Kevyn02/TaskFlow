@@ -53,25 +53,25 @@ O sistema permite que usuários gerenciem suas tarefas de forma eficiente, organ
 
 A aplicação é organizada em rotas públicas e privadas, separando o fluxo de autenticação do restante do sistema.
 
-👉 Veja a estrutura completa em: [Arquitetura de Rotas](./docs/rotes.md)
+👉 Veja a estrutura completa em: [Arquitetura de Rotas](./docs/rotes/index.md)
 
 ## 🧱 Layout da Aplicação
 
 Define a estrutura visual da aplicação para web e mobile, incluindo navegação e organização das telas.
 
-👉 Veja os detalhes em: [Layout da Aplicação](./docs/layout.md)
+👉 Veja os detalhes em: [Layout da Aplicação](./docs/layout/index.md)
 
 ## 🖼️ Wireframes
 
 Os wireframes foram utilizados como base para definição da interface e experiência do usuário nas versões web e mobile.
 
-👉 Veja todos os wireframes em: [Wireframes](./docs/wireframes/README.md)
+👉 Veja todos os wireframes em: [Wireframes](./docs/wireframes/index.md)
 
 ## 🗄️ Banco de Dados
 
 O sistema utiliza um modelo relacional com suporte a usuários, projetos e tarefas.
 
-👉 Veja a modelagem completa em: [Banco de Dados](./docs/database.md)
+👉 Veja a modelagem completa em: [Banco de Dados](./docs/database/index.md)
 
 ## 📊 Diagramas
 
@@ -82,7 +82,7 @@ O sistema possui diversos diagramas para representar seu funcionamento:
 - Diagramas de estados
 - Diagrama entidade-relacionamento (ER)
 
-👉 Acesse todos em: [Diagramas](./docs/diagrams/README.md)
+👉 Acesse todos em: [Diagramas](./docs/diagrams/index.md)
 
 ## 🧩 Tecnologias
 
@@ -338,12 +338,6 @@ Uso completo em celular e desktop
 - Sincronização entre dispositivos
 - Compartilhamento de projetos
 - Integração com calendário
-
----
-
-## 📄 Licença
-
-Este projeto está sob a licença **MIT**.
 
 ---
 
